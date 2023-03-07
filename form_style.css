@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cavolini;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(235, 228, 234, 0.8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #55189f;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 0px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #6a2020;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #0c0909;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputBox label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding-top: 10px 0;
+    font-size: 16px;
+    color: #55189f;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.box .inputBox input:valid~label,
+.box .inputBox input:focus~label {
+    top: -25px;
+    left: 0;
+    color: #55189f;
+    font-size: 18px;
+}
+button{
+    background: transparent;
+    margin-right: 5px;
+
+    border: 1px solid #311882;
+    color: #55189f;
+    background: #f2f5f6;
+    font: 20px Cavolini;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, .8);
+    margin-left: calc(100% - 65%);
+}
+button:hover{
+    background: transparent;
+    margin-right: 5px;
+    margin-left: calc(100% - 65%);
+    border: 1px solid #311882;
+    color: #55189f;
+    background: #61ce7c;
+    font: 20px Cavolini;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0 2.5px 2.5px rgba(0, 0, 0, .8);
+    transition: 1s;
+}
+/*
+button::before {
+    content: '';
+    background: transparent;
+    margin-right: 5px;
+
+    border: 1px solid #311882;
+    color: #55189f;
+    background: #03a9f4;
+    font: 20px Cavolini;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+button::after {
+    content: '';
+    background: transparent;
+    color: #55189f;
+    background: #03a9f4;
+    font: 20px Cavolini;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+*/
