@@ -1,0 +1,18 @@
+input:checked~label {
+    background: url('dark_ship.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 10px solid rgba(90, 79, 136, 0.2);
+}
+
+input:checked~label::after {
+    left: 440px;
+    border: 10px solid rgba(90, 79, 136, 0.2);
+    transform: translateX(-100%);
+}
+
+input:checked~label::before {
+    left: 430px;
+    transform: translateX(-100%);
+    background: #777ba5;
+}
