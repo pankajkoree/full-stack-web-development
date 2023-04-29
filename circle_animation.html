@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Creative Spinner Animation</title>
+    <style>
+      body {
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+
+.wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    padding-bottom: 100px;
+    box-shadow: 0px 40px 60px -20px rgb(0, 0, 0, 0.4);
+}
+
+h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px;
+    color: rgb(11, 147, 49);
+    text-transform: uppercase;
+}
+
+.spinner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 30%;
+    background: #6b6bc0;
+    border-radius: 50%;
+    position: absolute;
+    display: inline-block;
+}
+
+.spinner:after,
+.spinner:before {
+
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.spinner-1:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border: 4px solid transparent;
+    border-top-color: #15916b;
+    border-bottom-color: #15916b;
+    -webkit-animation: spinny 1s linear infinite;
+    animation: spinny 1s linear infinite;
+}
+
+@keyframes spinny {
+    0% {
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        -webkit-transform: rotate(45deg) scale(1.1);
+        transform: rotate(45deg) scale(1.1);
+    }
+
+    75% {
+        -webkit-transform: rotate(90deg) scale(1.2);
+        transform: rotate(90deg) scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg) scale(1);
+        transform: rotate(360deg) scale(1);
+    }
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Spinners</h1>
+      <div class="spinner spinner-1"></div>
+    </div>
+  </body>
+</html>
