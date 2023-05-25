@@ -1,0 +1,45 @@
+<style>
+  body {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    transition: all 1.5s ease;
+    font-family: "Ropa Sans", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 0;
+  }
+
+  button span{
+    padding: 15px 35px;
+    background: #000;
+    color: #ffffff;
+    border-radius: 50px;
+    backdrop-filter: blur(20px);
+    transition: 0.4s ease-in-out;
+    transition-property: color;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  button span:hover {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    backdrop-filter: blur(0px);
+    transition: 1s ease-in-out;
+    color: #ffffff;
+  }
+</style>
+<body>
+  <button>
+    <span>HOVER</span>
+  </button>
+</body>
