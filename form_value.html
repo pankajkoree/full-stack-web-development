@@ -1,0 +1,13 @@
+<body>
+    <input type="text" id="val">
+    <button onclick="to_upper()">Convert lower case to uppercase</button>
+    <p id="res"></p>
+    <script>
+      function to_upper() {
+        let a = document.getElementById("val").value; // corrected 'values' to 'value'
+        let b = a.toUpperCase();
+        document.getElementById("res").innerHTML = b;
+      }
+    </script>
+  </body>
+  
