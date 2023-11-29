@@ -1,0 +1,16 @@
+<body>
+  Enter the number : <input id="num">
+  <button onclick="fact()">Get result </button>
+  <p id="res"></p>
+  <script>
+    function fact() {
+      var i, num, f = 1;
+      num = document.getElementById("num").value;
+      for (i = 1; i <= num; i++) {
+
+        f = f * i;
+      }
+      document.getElementById("res").innerHTML = "The factorial of " + num + " is " + f;
+    }
+  </script>
+</body>
