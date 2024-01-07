@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image tag</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="image">
+
+    <hr>
+    <img src="./html-1000.jpg" alt="thapa image">
+
+    <hr>
+
+    <img src="./html-1000.jpg" alt="thapa image">
+
+    <hr>
+    <img src="./html-1000.jpg" 
+    alt="thapa image"
+    width="100%"
+    height="auto"
+    title="using lazy loading"
+    loading="lazy">
+    <hr>
+
+    <a href="https://www.youtube.com/watch?v=5ccq_nLHneE&t=8699s"><img src="./html-1000.jpg" alt="thapa image"></a>
+    
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <br>
+
+    <img src="./html-1000.jpg" alt="area wise link attached image" usemap="#map1">
+
+    <map name="map1">
+        <area shape="rect"
+         coords="0,0,125,150"
+          href="https://www.youtube.com/watch?v=5ccq_nLHneE&t=8699"
+           alt="north area">
+        <area shape="rect"
+         coords="606,106,765,300"
+          href="https://www.w3schools.com/html/default.asp"
+           alt="right side html link">
+
+           <area shape="rect"
+         coords="863,16,983,58"
+          href="https://hi.wikipedia.org/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80"
+           alt="hindi language">
+    </map>
+
+
+    <hr>
+    <hr>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <h2>Picture tag</h2>
+
+    <picture>
+        <source srcset="./images/vlc_jpg.webp" type="image/webp" />
+        <source srcset="./images/vlc_gif.gif" type="image/gif" />
+        <source srcset="./images/vlc_jpg.jpg" type="image/jpg" />
+        <source srcset="./images/vlc_bitmap.bmp" type="image/bmp" />
+        <img src="./images/vlc_jpg.jpg" alt="VLC Image">
+    </picture>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr>
+    <hr>
+    <h3>figure tag</h3>
+    <figure>
+        <img src="images/vlc_jpg.jpg" alt="vlc images">
+        <figcaption>VLC media player</figcaption>
+    </figure>
+</body>
+</html>
