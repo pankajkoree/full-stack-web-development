@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="template website">
+    <meta name="author" content="pankaj">
+    <title>template website</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        /* font-size: 62.5%; */
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+      }
+      h1 {
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      li,
+      p,
+      label {
+        font-family: Urbanist;
+        letter-spacing: 0.06;
+        line-height: 1.6;
+        font-size: 1.4rem;
+      }
+      audio {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+      }
+      progress {
+        height: 2rem;
+        width: 20rem;
+      }
+
+      /* ul,
+      .service-section .service-gallery {
+        display: flex;
+        gap: 1rem;
+      } */
+    </style>
+  </head>
+  <body>
+    <!--header section-->
+    <header>
+      <div class="logo">
+        <a href="#" tabindex="_blank">
+          <img
+            src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w600/2023/10/free-images.jpg"
+            alt="thapa technical logo"
+            width="5%"
+            height="5%"
+          />
+        </a>
+      </div>
+      <!--nav bar section-->
+      <nav>
+        <ul style="list-style: none; display: flex; gap: 10px">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--main section-->
+    <main>
+      <div class="hero-content">
+        <h1>I'm a student</h1>
+        <p>
+          all about Website Development, Technical, Tips and Tricks, Designs
+          Principle and Programming videos in the Hindi Language.
+        </p>
+        <button>See my works</button>
+        <a
+          href="https://www.youtube.com/channel/UCvOFvedc4oiCrn_X8KMpUWA"
+          target="_blank"
+          ><button>visit youtube</button></a
+        >
+      </div>
+      <!--hero section image-->
+      <div class="hero-image">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="100days images"
+            width="15%"
+            height="5%"
+          />
+        </figure>
+      </div>
+    </main>
+    <!--about section-->
+    <section>
+      <h2>about pankaj 💜</h2>
+      <div class="about-content">
+        <p>Its great to meet you! I'm pankaj</p>
+        <p>
+          all about Website Development, Technical, Tips and Tricks, Designs
+          Principle and Programming videos in the Hindi Language.
+        </p>
+        <p><strong>My coding knowledge</strong></p>
+        <div class="about-progess">
+          <label for="html">HTML CODE:</label>
+          <progress id="html" max="100" min="0" value="100"></progress>
+        </div>
+        <div class="about-css">
+          <label for="css">CSS CODE:</label>
+          <progress id="css" max="100" min="0" value="100"></progress>
+        </div>
+        <div class="about-js">
+          <label for="js">JS CODE:</label>
+          <progress id="js" max="100" min="0" value="100"></progress>
+        </div>
+      </div>
+    </section>
+    <!--our services section-->
+    <section class="servcies">
+      <h2>Our services</h2>
+      <div class="service-gallery">
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="100days images"
+            width="15%"
+            height="5%"
+          />
+          <figcaption>html website development</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="100days images"
+            width="15%"
+            height="5%"
+          />
+          <figcaption>html website development</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="100days images"
+            width="15%"
+            height="5%"
+          />
+          <figcaption>html website development</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="100days images"
+            width="15%"
+            height="5%"
+          />
+          <figcaption>html website development</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            width="15%"
+            height="5%"
+          />
+          <figcaption>html website development</figcaption>
+        </figure>
+      </div>
+    </section>
+    <!--our blog-->
+    <section class="blog-section">
+      <h2>our blogs</h2>
+      <article>
+        <header>
+          <h2>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h2>
+        </header>
+        <p>
+          all about Website Development, Technical, Tips and Tricks, Designs
+          Principle and Programming videos in the Hindi Language.
+        </p>
+
+        <section>
+          <h3>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h3>
+          <p>
+            all about Website Development, Technical, Tips and Tricks, Designs
+            Principle and Programming videos in the Hindi Language.
+          </p>
+        </section>
+
+        <section>
+          <h3>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h3>
+          <p>
+            all about Website Development, Technical, Tips and Tricks, Designs
+            Principle and Programming videos in the Hindi Language.
+          </p>
+        </section>
+        <section>
+          <h3>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h3>
+          <p>
+            all about Website Development, Technical, Tips and Tricks, Designs
+            Principle and Programming videos in the Hindi Language.
+          </p>
+        </section>
+        <section>
+          <h3>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h3>
+          <p>
+            all about Website Development, Technical, Tips and Tricks, Designs
+            Principle and Programming videos in the Hindi Language.
+          </p>
+        </section>
+        <section>
+          <h3>
+            Elevate your web development skills with
+            <strong> <i> pankaj</i></strong>
+          </h3>
+          <p>
+            all about Website Development, Technical, Tips and Tricks, Designs
+            Principle and Programming videos in the Hindi Language.
+          </p>
+        </section>
+        <p>Thank you for reading till the end</p>
+      </article>
+    </section>
+    <!--podcast section-->
+    <section class="podcast-section">
+      <p>
+        <em>
+          I have also added web development podcast on my yotube channel
+        </em>
+      </p>
+      <!--
+      <p>audio tag</p>
+      <audio controls>
+        <source src="song.mp3" type="audio/mpeg" />
+        <source src="audio_thapa.wav" type="audio/wav" />
+      </audio>
+
+      <hr />
+      <hr />
+      <br />
+      <br />
+
+      <p>video tag</p>
+      <video controls>
+        <source src="video_song.mp4" type="video/mp4" />
+      </video>
+      -->
+    </section>
+    <!--other links-->
+    <section class="blog-link-section">
+      <p>Hope u like it</p>
+      <ul>
+        <a
+          href="https://www.youtube.com/channel/UCvOFvedc4oiCrn_X8KMpUWA"
+          target="_blank"
+          ><li>Please subscribe to my channel</li></a
+        >
+
+        <a href="https://www.instagram.com/imthe1_uwant/" target="_blank"
+          ><li>Please follow me</li></a
+        >
+      </ul>
+    </section>
+
+    <!--footer section-->
+    <footer>
+      <p>&copy; copyright @ pankaj</p>
+    </footer>
+  </body>
+</html>
