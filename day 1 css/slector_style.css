@@ -1,0 +1,18 @@
+#heading1{
+    color: gold;
+    background-color: green;
+}
+
+.para{
+    color: green;
+    background-color: yellow;
+}
+
+#btn{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: 2px solid red;
+    border-radius: 10px;
+    padding: 10px;
+}
