@@ -1,0 +1,10 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0, 94%);
+  background-image: url("https://www.livemint.com/lm-img/img/2023/09/13/600x338/Ganesh-Idols--11_1694585776905_1694585838041.jpg"),url("https://iskcondwarka.org/wp-content/uploads/2021/09/Ganesh-chaturthi.jpg");
+  background-repeat: no-repeat;
+  /*background-size: 100% 100%;*/
+  position: bottom left;
+  background-blend-mode: difference;
+}
