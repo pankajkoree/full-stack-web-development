@@ -1,0 +1,72 @@
+/*  RGB stands for red green blue 
+where red = rgb(255,0,0) = #ff0000
+green = rgb(0,255,0) = #00ff00
+blue = rgb(0,0,255) = #0000ff
+*/
+
+/* making the heading as green color in red background */
+
+#heading1{
+    color: #00ff00;
+    background-color: #ff0000;
+}
+
+/* paragraph in blue color with green background*/
+
+.para{
+    color: #0000ff;
+    background-color: #00ff00;
+}
+
+
+/* anchor as magenta color in some other background color */
+#btn{
+    color: #ff00ff;
+    background-color: #ffff00;
+    text-decoration: none;
+    border: 2px solid #458478;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* HSL stands for hue saturation lightness
+as rgb it also use for giving style in color
+
+
+*/
+#hsl{
+    color: hsl(145, 85%, 35%);
+}
+
+/* rgba stands for red green blue alpha
+where alpha is the extra property added to origibal rgb 
+
+here alpha means how dark and how much light the style should be
+
+max = 1
+min = 0 i.e transparent
+can also be achieved by
+color: transparent;
+
+*/
+#rgba{
+    color: rgba(16, 82, 132, 0.4);
+}
+
+#trans1{
+    color: transparent;
+}
+
+#trans2{
+    color: rgba(34, 78, 12, 0);
+}
+
+/* to avoid remembering color hexcode or rgb code use the color providing websites such as 
+https://uicolors.app/create
+
+*/
+
+p{
+    color: hsla(129, 70%, 33%, 0.5);
+}
