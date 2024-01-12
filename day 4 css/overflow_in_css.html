@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .visible_overflow {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        background-color: black;
+        color: red;
+        /*overflow: visible;*/
+      }
+      .hidden_overflow {
+        position: absolute;
+        width: 400px;
+        height: 100px;
+        right: 0;
+        background-color: black;
+        color: green;
+        overflow: hidden;
+      }
+      .scroll_overflow {
+        position: absolute;
+        background-color: green;
+        width: 400px;
+        height: 100px;
+        bottom: 0%;
+        left: 0%;
+        overflow: scroll;
+      }
+      .auto_overflow {
+        position: absolute;
+        background-color: green;
+        width: 400px;
+        height: 100px;
+        bottom: 0%;
+        right: 0%;
+        overflow: auto;
+      }
+      .xy_overflow {
+        position: absolute;
+        background-color: green;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100px;
+        height: 100px;
+        overflow-x: scroll;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <!--by default, the overflow contents are visible -->
+    <p class="visible_overflow">
+      Text messaging, or texting, is the act of composing and sending electronic
+      messages, typically consisting of alphabetic and numeric characters,
+      between two or more users of mobile devices, desktops/laptops, or another
+      type of compatible computer. Text messages may be sent over a cellular
+      network or may also be sent via satellite or Internet connection. The term
+      originally referred to messages sent using the Short Message Service
+      (SMS). It has grown beyond alphanumeric text to include multimedia
+      messages using the Multimedia Messaging Service (MMS), which can contain
+      digital images, videos, and sound content, as well as ideograms known as
+      emoji (happy faces, sad faces, and other icons), and instant messenger
+      applications (usually the term is used when on mobile devices).
+    </p>
+
+    <!--the overflow contents as hidden -->
+    <p class="hidden_overflow">
+      Text messaging, or texting, is the act of composing and sending electronic
+      messages, typically consisting of alphabetic and numeric characters,
+      between two or more users of mobile devices, desktops/laptops, or another
+      type of compatible computer. Text messages may be sent over a cellular
+      network or may also be sent via satellite or Internet connection. The term
+      originally referred to messages sent using the Short Message Service
+      (SMS). It has grown beyond alphanumeric text to include multimedia
+      messages using the Multimedia Messaging Service (MMS), which can contain
+      digital images, videos, and sound content, as well as ideograms known as
+      emoji (happy faces, sad faces, and other icons), and instant messenger
+      applications (usually the term is used when on mobile devices).
+    </p>
+
+    <!--the overflow contents as scroll -->
+    <p class="scroll_overflow">
+      Text messaging, or texting, is the act of composing and sending electronic
+      messages, typically consisting of alphabetic and numeric characters,
+      between two or more users of mobile devices, desktops/laptops, or another
+      type of compatible computer. Text messages may be sent over a cellular
+      network or may also be sent via satellite or Internet connection. The term
+      originally referred to messages sent using the Short Message Service
+      (SMS). It has grown beyond alphanumeric text to include multimedia
+      messages using the Multimedia Messaging Service (MMS), which can contain
+      digital images, videos, and sound content, as well as ideograms known as
+      emoji (happy faces, sad faces, and other icons), and instant messenger
+      applications (usually the term is used when on mobile devices).
+    </p>
+
+    <!--the overflow contents as auto works almost as scroll -->
+    <p class="auto_overflow">
+        Text messaging, or texting, is the act of composing and sending electronic
+        messages, typically consisting of alphabetic and numeric characters,
+        between two or more users of mobile devices, desktops/laptops, or another
+        type of compatible computer. Text messages may be sent over a cellular
+        network or may also be sent via satellite or Internet connection. The term
+        originally referred to messages sent using the Short Message Service
+        (SMS). It has grown beyond alphanumeric text to include multimedia
+        messages using the Multimedia Messaging Service (MMS), which can contain
+        digital images, videos, and sound content, as well as ideograms known as
+        emoji (happy faces, sad faces, and other icons), and instant messenger
+        applications (usually the term is used when on mobile devices).
+      </p>
+
+      <!--the overflow contents as overflowx and overflowy -->
+    <p class="xy_overflow">
+        Text messaging, or texting, is the act of composing and sending electronic
+        messages, typically consisting of alphabetic and numeric characters,
+        between two or more users of mobile devices, desktops/laptops, or another
+        type of compatible computer. Text messages may be sent over a cellular
+        network or may also be sent via satellite or Internet connection. The term
+        originally referred to messages sent using the Short Message Service
+        (SMS). It has grown beyond alphanumeric text to include multimedia
+        messages using the Multimedia Messaging Service (MMS), which can contain
+        digital images, videos, and sound content, as well as ideograms known as
+        emoji (happy faces, sad faces, and other icons), and instant messenger
+        applications (usually the term is used when on mobile devices).
+      </p>
+  </body>
+</html>
