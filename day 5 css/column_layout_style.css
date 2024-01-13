@@ -1,0 +1,17 @@
+/* ccolumn-count Specifies the number of columns an element should be divided into */
+.c_layout{
+    column-count: 3;
+    background-color: gold;
+    border: 2px solid purple;
+    padding: 10px;
+}
+
+/* column-gap Specifies the gap between the columns*/
+.c_layout{
+    column-gap: 200px;
+}
+
+/* column-rules add the rule or straight line in between the two columns*/
+.c_layout{
+    column-rule: 5px solid green;
+}
