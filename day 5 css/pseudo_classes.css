@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* this one same as div:first-child 
+  div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vh;
+    background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(228deg 97% 24%) 6%,
+      hsl(216deg 94% 27%) 12%,
+      hsl(204deg 91% 30%) 19%,
+      hsl(192deg 88% 34%) 27%,
+      hsl(180deg 85% 37%) 38%,
+      hsl(168deg 82% 41%) 63%,
+      hsl(156deg 79% 44%) 84%,
+      hsl(144deg 76% 47%) 93%,
+      hsl(132deg 73% 51%) 100%
+    );
+  }
+  div:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 10vw;
+    height: 10vh;
+    background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(254deg 98% 22%) 6%,
+      hsl(267deg 95% 24%) 12%,
+      hsl(280deg 94% 26%) 19%,
+      hsl(293deg 92% 29%) 27%,
+      hsl(307deg 89% 31%) 38%,
+      hsl(320deg 87% 33%) 63%,
+      hsl(334deg 84% 35%) 84%,
+      hsl(347deg 82% 37%) 93%,
+      hsl(0deg 80% 40%) 100%
+    );
+  }
+  div:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vh;
+    background-image: linear-gradient(
+      45deg,
+      hsl(240deg 100% 20%) 0%,
+      hsl(264deg 97% 24%) 2%,
+      hsl(288deg 92% 28%) 6%,
+      hsl(312deg 88% 32%) 14%,
+      hsl(336deg 85% 36%) 32%,
+      hsl(0deg 80% 40%) 70%,
+      hsl(25deg 80% 40%) 85%,
+      hsl(50deg 78% 41%) 92%,
+      hsl(75deg 78% 42%) 96%,
+      hsl(100deg 76% 43%) 99%,
+      hsl(125deg 76% 44%) 100%
+    );
+  }
+  /* this one same as div:last-child
+  div:nth-child(4) {
+    position: absolute;
+    width: 10vw;
+    bottom: 0;
+    right: 0;
+    height: 10vh;
+    background-image: linear-gradient(
+      45deg,
+      hsl(0deg 80% 40%) 0%,
+      hsl(14deg 79% 40%) 23%,
+      hsl(28deg 80% 40%) 35%,
+      hsl(42deg 79% 41%) 43%,
+      hsl(56deg 78% 41%) 49%,
+      hsl(69deg 77% 42%) 55%,
+      hsl(83deg 77% 42%) 63%,
+      hsl(97deg 77% 43%) 72%,
+      hsl(111deg 76% 43%) 85%,
+      hsl(125deg 76% 44%) 100%
+    );
+  } */
+  p:first-of-type{
+    color: red;
+  }
+  p:last-of-type{
+    background-color: gold;
+  }
