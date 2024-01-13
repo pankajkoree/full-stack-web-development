@@ -1,0 +1,31 @@
+body{
+    /*background: url("pexels-photo-268533.webp");*/
+    background-repeat: no-repeat;
+}
+.fst_line::first-line{
+    color: green;
+    
+}
+
+.fst_line::before{
+  content: url("https://i.pinimg.com/originals/2e/7f/6d/2e7f6da0c1bf86291c58eab0bc7a2178.gif");
+}
+.fst_line::after{
+  content: url("https://media.tenor.com/Qz2_hwxZGLwAAAAi/wiggle-eyebrows-whats-wiggle.gif");
+}
+.fst_line::first-letter{
+  background-color: red;
+  font-size: 50px;
+}
+.fst_line::selection{
+  color: red;
+  background-color: green;
+}
+::marker{
+  color: blue;
+  font-size: 20px;
+}
+/* gives the style to theb placeholder value in inputfield*/
+::placeholder{
+  color: red;
+}
