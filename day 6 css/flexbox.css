@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* display content as default form also same as flex-direction:column;*/
+div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  text-align: center;
+  background-color: aqua;
+}
+
+/* display content as flex-direction:row;*/
+p {
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
