@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div{
+    width: 200px;
+    background-color: aqua;
+    color: rgb(35, 18, 187);
+    transition: width color;
+    transition-delay: 1s;
+    transition-duration: 5s;
+    font-size: 30px;
+}
+div:hover{
+    width: 250px;
+    color: green;
+}
