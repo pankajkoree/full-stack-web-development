@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 1px solid gold;
+  border-radius: 50%;
+  background-color: red;
+  animation: square;
+  animation-duration: 15s;
+  animation-delay: 2s;
+  animation-direction: linear;
+}
+
+@keyframes square {
+    0%{
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+  33% {
+    background-color: rgb(34, 219, 49);
+    width: 300px;
+    height: 300px;
+  }
+  66%{
+    background-color: rgb(45, 123, 212);
+    width: 500px;
+    height: 500px;
+  }
+  100%{
+    background-color: rgb(212, 43, 206);
+    width: 200px;
+    height: 200px;
+  }
+}
