@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+/* translate means giving the x and y axis to place the content*/
+.translate_t{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    transform: translate(100px,100px);
+}
+
+/* rotate using degree rotates the item */
+.translate_t{
+    transform: translate(100px,100px) rotate(45deg);
+}
+
+/* scale increases or decreases the size of the content by horizontally and vertically (x,y)*/
+.scale_t{
+    position: absolute;
+    background-color: rgb(17, 179, 28);
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transform: scale(2,2);
+}
+
+.skew_t{
+    position: absolute;
+    background-color: red;
+    right: 0;
+    top: 10%;
+    width: 350px;
+    height: 180px;
+    font-size: 20px;
+    transform: skewX(20deg);
+}
