@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue:rgb(73, 73, 183);
+    --red:rgb(210, 28, 179);
+    --white:#fff;
+}
+html{
+position: relative;
+width: 100vw;
+height: 100vh;
+background-color: var(--blue);
+}
+div{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 100px;
+height: 100px;
+background-color: rgb(210, 28, 179);
+color: var(--white);
+}
+
+/* overriding the variable */
+div{
+    --white:#00ff00;
+    color: var(--white);
+}
