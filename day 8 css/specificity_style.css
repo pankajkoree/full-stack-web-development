@@ -1,0 +1,25 @@
+/*
+specificity in css:
+1. !important
+2. inline 
+3. id
+4. class
+5. element
+6. universal
+*/
+*{
+    background-color: gold;
+}
+div{
+    position: absolute;
+    width: calc(100px,90%);
+    height: 100px;
+    background-color: green;
+}
+.div_{
+    background-color: aliceblue;
+}
+
+#div__{
+    background-color: blueviolet;
+}
