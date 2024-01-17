@@ -1,0 +1,12 @@
+input[type=radio]{
+    accent-color: green;
+}
+.sex:has([type="radio"]:checked) label{
+    color: rgb(184, 8, 34);
+}
+input[type=checkbox]{
+    accent-color: green;
+}
+.subjects:has([type="chekbox"]:checked) label{
+    color: gold;
+}
