@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 80%;
+  aspect-ratio: 2/1;
+  margin: auto;
+  border: 2px solid greenyellow;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.child1,
+.child3 {
+  aspect-ratio: 1/2;
+  height: 90%;
+  background-color: #3deb70;
+}
+.child2,
+.child4 {
+  height: 50%;
+  aspect-ratio: 2/1;
+  background-color: #ff32fd;
+}
+.child1,
+.child2,
+.child3,
+.child4 {
+  display: inline-block;
+  border: 1px solid blue;
+  margin: 5px;
+  scroll-snap-align: center;
+}
