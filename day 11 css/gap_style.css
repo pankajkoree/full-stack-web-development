@@ -1,0 +1,33 @@
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: aquamarine;
+    width: 100%;
+    height: 20%;
+}
+
+.child{
+    width: 20%;
+    display: flex;
+    background-color: black;
+}
+*/
+.main {
+    border: 1px solid black;
+    background-color: rgb(255, 230, 251);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 70px;
+  }
+ .child{
+    border: 1px solid black;
+    width: 10%;
+    aspect-ratio: 2;
+    padding: 10px;
+    background-color: lightgreen;
+  }
