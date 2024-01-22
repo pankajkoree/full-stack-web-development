@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+.main_form {
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+img {
+  position: absolute;
+  left: 40%;
+  top: 5%;
+  width: 50px;
+  height: 50px;
+}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 2.5rem;
+}
+main {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+}
+label{
+  font-size: 1.5rem;
+}
+#u_lbl {
+  position: absolute;
+  top: 25%;
+}
+#u_name {
+  position: absolute;
+  top: 70%;
+  height: 30px;
+  width: 270px;
+  border: none;
+  border-bottom: 2px solid rgb(73, 68, 68);
+}
+#p_lbl {
+  position: absolute;
+  top: 120%;
+}
+#pwd {
+  position: absolute;
+  top: 170%;
+  height: 30px;
+  width: 270px; border: none;
+  border-bottom: 2px solid rgb(73, 68, 68);
+}
+#btn {
+  position: absolute;
+  font-size: 30px;
+  width: 180px;
+  height: 40px;
+  top: 250%;
+  margin-left: 45px;
+  color: #fff;
+  background-color:#3d80f4;
+  border: none;
+}
