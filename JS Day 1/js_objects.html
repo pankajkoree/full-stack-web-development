@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS objects</title>
+  </head>
+  <body>
+    <p>working with js objects</p>
+    <select id="selection">
+      <option value="1">firstName</option>
+      <option value="2">lastName</option>
+      <option value="3">age</option>
+      <option value="4">course</option>
+      <option value="5">nationality</option>
+    </select>
+    <br />
+    <br />
+    <button onclick="get_val()">Get value</button>
+    <p id="res"></p>
+    <script>
+      let employee = {
+        firstName: "pankaj",
+        lastName: "kori",
+        age: 23,
+        course: "BTCS",
+        nationality: "nepal",
+      };
+      //objecting the value of age
+      //let emp = employee;
+      //emp.age = 24;
+
+      function get_val() {
+        var selected = parseInt(document.getElementById("selection").value);
+        switch (selected) {
+          case 1:
+            el1 = employee.firstName;
+            d1 = document.getElementById("res");
+            d1.innerHTML = el1;
+            break;
+          case 2:
+            el2 = employee.lastName;
+            d2 = document.getElementById("res");
+            d2.innerHTML = el2;
+            break;
+          case 3:
+            el3 = employee.age;
+            d3 = document.getElementById("res");
+            d3.innerHTML = el3;
+            break;
+          case 4:
+            el4 = employee.course;
+            d4 = document.getElementById("res");
+            d4.innerHTML = el4;
+            break;
+          case 5:
+            el5 = employee.nationality;
+            d5 = document.getElementById("res");
+            d5.innerHTML = el5;
+            break;
+          default:
+            document.getElementById("res").innerHTML = "Invalid value";
+        }
+      }
+    </script>
+  </body>
+</html>

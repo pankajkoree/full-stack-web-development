@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS scope</title>
+    <style>
+      p,button {
+        width: 5%;
+        text-align: center;
+        height: 5%;
+        background-color: rgb(26, 78, 189);
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      p:hover,button:hover {
+        width: 5%;
+        text-align: center;
+        height: 5%;
+        background-color: rgb(20, 59, 46);
+        color: rgb(230, 222, 222);
+        cursor: pointer;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="add_()">click me</button>
+    <p id="p"></p>
+    <!-- Block scope
+        Block scope variables means the value declared inside { } with the let or const is considered as block variables and can be accessed inside the block. If it needs to be used outside the block, it should be declared with var
+    <script>
+      {
+        var a = 6; //using let and const we declare the block scope within {}
+        var b = 4;
+        //let x = a + b;  // this will give the proper output as the addition
+        //y = document.getElementById("p");
+        //y.innerHTML = x;
+      }
+      let x = a + b; // it won't give output until or unless the block code variables will be var
+      y = document.getElementById("p");
+      y.innerHTML = x;
+    </script>
+    -->
+    <!--local scope
+    variable declared inside the function are locak scope variables.
+    
+    <script>
+      function add_() {
+        let a = 5;
+        let b = 6;
+        elem = document.getElementById("p");
+        elem.innerHTML = a + b;
+      }
+    </script>
+    -->
+    <!--function scope
+    accessible only inside the function
+    ariables declared with var, let and const are quite similar when declared inside a function.
+
+    <script>
+        function add_() {
+        let a = 5;
+        let b = 6;
+        elem = document.getElementById("p");
+        elem.innerHTML = a + b;
+      }
+      
+    </script>
+    -->
+    <!--Global scope 
+    A variable declared outside a function, becomes GLOBAL.
+    -->
+    <script>
+      let a = 7;
+      function add_() {
+        ele = document.getElementById("p");
+        ele.innerHTML = a ** 2;
+      }
+    </script>
+  </body>
+</html>

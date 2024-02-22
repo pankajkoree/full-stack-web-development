@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS hoisting</title>
+  </head>
+  <body>
+    <p id="p"></p>
+    <hr />
+    <script>
+      x = 5;
+      y = 6; // declaring here gives the the result as 11
+      a = document.getElementById("p");
+      a.innerHTML = x + y;
+
+      y = 6; // declaring after the operation doesn't give result
+    </script>
+  </body>
+</html>
