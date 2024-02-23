@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Object 2</title>
+  </head>
+  <body>
+    <p id="result"></p>
+
+    <!--printing nested objects-->
+    <p id="nested"></p>
+    <!--accessing the objects with different approaches-->
+    <script>
+        // nesting the objects in Course
+      let clz = {
+        cName: "Kalinga University", //college name
+        cCity: "Raipur", //college city
+        cCountry: "India", // college country
+        cCourse : {
+            cCOurse1 : "Engineering",
+            cCOurse2 : "Management",
+            cCOurse3 : "Pharmacy",
+            cCourse4 : "Law"
+        }
+      };
+      // adding new properties
+      clz.cStudent = "10k";
+
+      //deleting properties
+      //delete clz.cCity;
+
+      // making the string of the above abjects and looping through it
+      let strg = " ";
+      for (let i in clz) {
+        strg += clz[i] + " ";
+      }
+      // printing the looped objects value in string
+      document.getElementById("result").innerHTML = strg;
+    
+      // printing the nested objects
+      document.getElementById("nested").innerHTML = clz.cCourse.cCOurse1;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol Data Type in JS</title>
+</head>
+<body>
+    <p id="res"></p>
+    <script>
+        let emp = {
+            fname : "pankaj",
+            lname : "kori"
+        }
+        let age = Symbol('age');
+        emp[age] = 23;
+        document.getElementById("res").innerHTML = emp[age];
+    </script>
+</body>
+</html>
