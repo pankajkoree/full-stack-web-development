@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS object methods</title>
+  </head>
+  <body>
+    <p id="res"></p>
+    <script>
+      // creating an object named emp with its attributes as well as some related functions
+      let emp = {
+        fname: "pankaj",
+        lname: "kori",
+        weight: 62,
+        height: 5.6,
+        designation: "intern",
+        salary: "10k",
+        // fullname is the function for fname and lname
+        fullname: function () {
+          return this.fname + " " + this.lname;
+        },
+        //body tells the height and weight
+        body: function () {
+          return "Height = " + this.height + " , " + "Weight = " + this.weight;
+        },
+        //details for employee details
+        details: function () {
+          return (
+            "Designation = " +
+            this.designation +
+            " , " +
+            "Salary = " +
+            this.salary
+          );
+        },
+      };
+
+      // accessing the function from objects
+      ele = document.getElementById("res");
+      //accessing fullname()
+      //  ele.innerHTML = emp.fullname();
+      //accessing body()
+      //  ele.innerHTML = emp.body();
+      //accessing details() and using inbuilt methods to make it uppercase
+      //  x = emp.details().toUpperCase();
+      //  ele.innerHTML = x;
+
+      // showing the objects in JSON format
+      ele.innerHTML = JSON.stringify(emp);
+    </script>
+  </body>
+</html>

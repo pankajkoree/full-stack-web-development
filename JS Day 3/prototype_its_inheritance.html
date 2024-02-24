@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS object prototypes and its inheritance</title>
+  </head>
+  <body>
+    <p id="pro_"></p>
+    <hr><hr>
+    <p id="res"></p>
+    <script>
+      function employee(id, firstname,lastname, age, DOB, nationality) {
+        this.id = id;
+        this.fname = firstname;
+        this.lname = lastname;
+        this.age = age;
+        this.dateofbirth = DOB;
+        this.nationality = nationality;
+      }
+      // prototype of the employee
+      const emp1 = new employee(12, "pankaj", 23, "2000", "nepal");
+      const emp2 = new employee(112, "john", 30, "1994", "USA");
+      document.getElementById("pro_").innerHTML = emp1.id;
+
+
+      // prototypal inheritance
+      employee.prototype.name = function(){
+        return this.fname + " " + this.lname;
+      }
+      const ob1 = new employee(12, "pankaj","kori", 23, "2000", "nepal");
+      document.getElementById("res").innerHTML = ob1.name();
+    </script>
+  </body>
+</html>

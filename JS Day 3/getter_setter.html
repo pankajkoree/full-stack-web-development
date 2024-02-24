@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getter and Setter</title>
+  </head>
+  <body>
+    <p id="res"></p>
+    <hr>
+    <hr>
+    <p id="body_"></p>
+    <script>
+      let emp = {
+        fname: "pankaj",
+        lname: "kori",
+        weight: 62,
+        height: 5.6,
+        designation: "intern",
+        salary: "10k",
+        //implementing setter function
+        set details(value){
+            this.designation = value;
+        },
+
+        //implementing getter function coz it provides simple syntax than object methods
+        get fullname(){
+            return this.fname+" "+this.lname;
+        }
+      };
+      emp.designation = "data analyst";
+
+      ele = document.getElementById("res");
+      ele.innerHTML = emp.fullname;
+
+      document.getElementById("body_").innerHTML = emp.designation;
+    </script>
+  </body>
+</html>
