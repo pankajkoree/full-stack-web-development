@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IS strictly equal</title>
+  </head>
+  <body>
+    <hr />
+    <hr />
+    <p>
+      <b> IsStrictlyEqual ( x, y )</b><br />
+      The abstract operation IsStrictlyEqual takes arguments x (an ECMAScript
+      language value) and y (an ECMAScript language value) and returns a
+      Boolean. It provides the semantics for the === operator. It performs the
+      following steps when called: 1. If Type(x) is not Type(y), return false.
+      2. If x is a Number, then a. Return Number::equal(x, y). 3. Return
+      SameValueNonNumber(x, y).
+      <br />
+      <b>NOTE</b>
+      This algorithm differs from the SameValue Algorithm in its treatment of
+      signed zeroes and NaNs.
+    </p>
+    <p id="is_strictly_equal_"></p>
+    <hr />
+    <hr />
+    <p>
+      <b>The SameValueZero</b> <br> algorithm behaves similarly to the Strict
+      Equality Comparison (===) in most cases, but with some differences when
+      comparing certain types, especially NaN and -0 (negative zero).
+    </p>
+    <p id="same_value_zero"></p>
+    <hr />
+    <hr />
+    <script src="is_strictly_equal.js"></script>
+  </body>
+</html>
