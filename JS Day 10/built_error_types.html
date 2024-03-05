@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Built-in error types or Error constructors</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li>List of Error</li>
+      </ol>
+      <ul>
+        <li><a href="#eval">EvalError</a></li>
+        <li><a href="#reference">ReferenceError</a></li>
+        <li><a href="#internal">InternalError</a></li>
+        <li><a href="#syntax">SyntaxError</a></li>
+        <li><a href="#type">TypeError</a></li>
+        <li><a href="#uri">URIError</a></li>
+      </ul>
+    </nav>
+    <hr />
+    <hr />
+    <h1>
+      Standard Built-in Error Types or Error Constructors <br />
+      These are the built-in standard error types or error constructors, and
+      they are <br />helpful for exception handling in javascript<br />
+    </h1>
+
+    <hr />
+    <hr />
+    <div id="eval">
+      <p>
+        <b>1. EvalError:-</b> This type of error occurs in the eval() function
+        and indicates an issue with its arguments. Additionally, the eval()
+        function is the global function that takes a string with javascript code
+        and evaluates it for you.
+        <br />
+        Additionally, EvalError is not used within the current ECMAScript
+        specification. However, the object itself remains for backward
+        compatibility with earlier versions of the specification. <br />
+      </p>
+
+      <hr />
+      <p id="eval_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <div id="reference">
+      <p>
+        <b>2. ReferenceError:-</b> ReferenceError occurs when the code uses
+        undeclared variables.
+        <br />
+        Whenever the code tries to access undeclared variables, the error occurs
+        as a reference error.
+      </p>
+      <hr />
+      <p id="refrence_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <div id="internal">
+      <p>
+        <b>3. InternalError:-</b> This error is directly thrown by the js engine
+        when the JS engine is overwhelmed by too many recursions, or the stack
+        grows over the limit.
+        <br />
+        <i>
+          <b> Non-standard: </b>This feature is non-standard and is not on a
+          standards track. Do not use it on production sites facing the Web: it
+          will not work for every user. There may also be large
+          incompatibilities between implementations and the behavior may change
+          in the future.
+        </i>
+        <em>
+          RangeError: Maximum call stack size exceeded (Chrome) <br />
+          InternalError: too much recursion (Firefox)<br />
+          RangeError: Maximum call stack size exceeded. (Safari)<br />
+        </em>
+      </p>
+      <hr />
+
+      <p id="internal_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <div id="syntax">
+      <p>
+        <b>4. SyntaxError:-</b> This error occurs when the programmer misuses
+        the syntax or breaks the javascript rule.
+      </p>
+      <hr />
+      <p id="syntax_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <div id="type">
+      <p>
+        <b>5. TypeError:-</b> It occurs when the given value is unexpected or
+        you are trying to operate on the wrong data type.
+      </p>
+      <hr />
+      <p id="type_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <div id="uri">
+      <p>
+        <b>6. URIError:-</b> This error occurs when you pass invalid parameters
+        to the encodeURI() or decodeURI() functions.
+      </p>
+
+      <hr />
+      <p id="uri_error"></p>
+      <hr />
+      <hr />
+    </div>
+    <script src="built_in_error.js"></script>
+  </body>
+</html>
