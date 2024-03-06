@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise , BigInt , Relational Operators</title>
+  </head>
+  <body>
+    <h1>Bitwise , BigInt , Relational Operators</h1>
+    <hr />
+    <hr />
+    <p>
+      <b> JavaScript Bitwise Operators</b><br />
+      Bit operators work on 32 bits numbers.
+      <br />
+      Any numeric operand in the operation is converted into a 32 bit number.
+      The result is converted back to a JavaScript number.
+    </p>
+    <img src="bitwise.png" alt="bitwise" />
+    <hr />
+    <hr />
+    <p>
+      <b> Bitwise AND</b> <br />
+      a & b <br />Returns a one in each bit position for which the corresponding
+      bits of both operands are ones.
+    </p>
+    <hr />
+    <p id="bitwise_and"></p>
+
+    <hr />
+    <hr />
+
+    <p>
+      <b> Bitwise OR</b> <br />
+      a | b <br />Returns a zero in each bit position for which the
+      corresponding bits of both operands are zeros.
+    </p>
+    <hr />
+    <p id="bitwise_or"></p>
+    <hr />
+    <hr />
+    <p>
+      <b> Bitwise XOR</b><br />
+      a ^ b <br />
+      Returns a zero in each bit position for which the corresponding bits are
+      the same. [Returns a one in each bit position for which the corresponding
+      bits are different.]
+    </p>
+    <hr />
+    <p id="bitwise_xor"></p>
+    <hr />
+    <hr />
+    <p>
+      <b> Left shift(<<) </b> <br />
+      This operator shifts the first operand the specified number of bits to the
+      left. Excess bits shifted off to the left are discarded. Zero bits are
+      shifted in from the right.
+    </p>
+    <hr />
+    <p id="left_shift"></p>
+    <hr />
+    <hr />
+    <p>
+      <b> Sign-propagating right shift (>>)</b><br />
+      This operator shifts the first operand the specified number of bits to the
+      right. Excess bits shifted off to the right are discarded. Copies of the
+      leftmost bit are shifted in from the left.
+    </p>
+    <hr />
+    <p id="right_shift1"></p>
+    <hr>
+    <img src="right shift neg signed.jpg" alt="">
+    <p id="right_shift2"></p>
+    <hr />
+    <hr />
+    <script src="bw_bi_rel_operators.js"></script>
+  </body>
+</html>
