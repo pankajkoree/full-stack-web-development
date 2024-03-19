@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .bg-black {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 class="heading">Document object model - DOM</h1>
+      <!-- 
+        innerHTML gives all the values i.e. inner tags too
+       innercontent gives only the text both hidden as well as displayed
+         innertext gives only the visible text
+
+      -->
+      <p id="paragraphs" class="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+        assumenda eos ut eius officiis.
+        <span style="display: none">testing the text</span> Laborum, sint!
+        Labore vel ab quisquam porro, hic odit reiciendis laborum laboriosam
+        molestias quia atque minima.
+      </p>
+      <img src="dom attr.png" alt="dom diff">
+      <hr>
+      <img src="queryselect.png" alt="working with query selector">
+    </div>
+    <hr>
+    <hr>
+    <ul>
+        <li>PK</li>
+        <li>AK</li>
+        <li>DK</li>
+    </ul>
+    <img src="queryslector all.png" alt="all query selector">
+    <hr>
+    <hr>
+    <ul>
+        <li class="list-items">PK</li>
+        <li class="list-items">AK</li>
+        <li class="list-items">DK</li>
+    </ul>
+
+    <!--from nodelist to array-->
+    <img src="ckassname and convert to array.png" alt="classname and li to array">
+    <script>
+      ele = document.getElementById("paragraphs").values;
+    </script>
+  </body>
+</html>
